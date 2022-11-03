@@ -12,7 +12,7 @@
 # Should return: 160 (the only even number)
 
 
-def find_st(arr):
+def find_st(arr: list) -> int:
     odds = [odd for odd in arr if odd % 2 == 1]
     evens = [even for even in arr if even % 2 == 0]
     return odds[0] if len(odds) == 1 else evens[0]
