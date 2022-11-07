@@ -16,7 +16,7 @@
 # the "XXX" is the expected result, not the input!
 
 
-def duplicate_encode(word):
+def duplicate_encode(word: str) -> str:
     res_str = ''.join(
         ['(' if word.lower().count(i) == 1 else ')' for i in word.lower()]
     )
